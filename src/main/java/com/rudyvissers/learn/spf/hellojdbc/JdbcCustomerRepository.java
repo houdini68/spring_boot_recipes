@@ -1,5 +1,7 @@
 package com.rudyvissers.learn.spf.hellojdbc;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.stereotype.Repository;
@@ -10,6 +12,7 @@ import java.util.List;
 
 @Repository
 public class JdbcCustomerRepository implements CustomerRepository {
+
     private static final String ALL_QUERY = "SELECT id, name, email FROM customer";
     private static final String BY_ID_QUERY = "SELECT id, name, email FROM customer WHERE id=?";
     private static final String INSERT_QUERY = "INSERT INTO customer (name, email) VALUES (?,?)";
@@ -17,6 +20,10 @@ public class JdbcCustomerRepository implements CustomerRepository {
 
     JdbcCustomerRepository(JdbcTemplate jdbc) {
         this.jdbc = jdbc;
+    }
+
+    private static Logger getLogger() {
+        return LoggerFactory.getLogger(CustomerRepository.class);
     }
 
     @Override
@@ -38,6 +45,7 @@ public class JdbcCustomerRepository implements CustomerRepository {
             ps.setString(2, customer.getEmail());
             return ps;
         }, keyHolder);
+        getLogger().info(String.format("keyHolder key:%d", keyHolder.getKey().longValue()));
         return new Customer(keyHolder.getKey().longValue(), customer.getName(), customer.getEmail());
     }
 
