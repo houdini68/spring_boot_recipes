@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Apr 05 04:02:03 CEST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017f-f775-206d-000022ac8008 
+on database directory memory:/home/rudy/IdeaProjects/Learn/spring_boot_recipes/d924b80b-a2d4-435c-b44a-29cf128437ad with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@512ddf17 
+Loaded from file:/home/rudy/repository2/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.8+10-LTS
+user.dir=/home/rudy/IdeaProjects/Learn/spring_boot_recipes
+os.name=Linux
+os.arch=amd64
+os.version=5.4.0-105-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

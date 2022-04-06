@@ -1,0 +1,30 @@
+2022-03-24 13:33:30.648  INFO 944418 --- [main] c.r.l.s.c.CalculatorApplication          : Starting CalculatorApplication using Java 11.0.8 on rudy-ThinkPad-T590 with PID 944418 (/home/rudy/IdeaProjects/Learn/spring_boot_recipes/target/classes started by rudy in /home/rudy/IdeaProjects/Learn/spring_boot_recipes)
+2022-03-24 13:33:30.650  INFO 944418 --- [main] c.r.l.s.c.CalculatorApplication          : The following 1 profile is active: "dev"
+2022-03-24 13:33:31.024  INFO 944418 --- [main] c.r.l.s.c.CalculatorApplication          : Info log message
+2022-03-24 13:33:31.025 ERROR 944418 --- [main] c.r.l.s.c.CalculatorApplication          : Error log message
+2022-03-24 13:33:31.092  INFO 944418 --- [main] c.r.l.s.c.CalculatorApplication          : Started CalculatorApplication in 0.767 seconds (JVM running for 1.415)
+2022-03-24 13:34:33.266  INFO 945462 --- [main] c.r.l.s.c.CalculatorApplication          : Starting CalculatorApplication using Java 11.0.8 on rudy-ThinkPad-T590 with PID 945462 (/home/rudy/IdeaProjects/Learn/spring_boot_recipes/target/classes started by rudy in /home/rudy/IdeaProjects/Learn/spring_boot_recipes)
+2022-03-24 13:34:33.268  INFO 945462 --- [main] c.r.l.s.c.CalculatorApplication          : The following 1 profile is active: "dev"
+2022-03-24 13:34:33.638  INFO 945462 --- [main] c.r.l.s.c.CalculatorApplication          : Info log message
+2022-03-24 13:34:33.639 ERROR 945462 --- [main] c.r.l.s.c.CalculatorApplication          : Error log message
+2022-03-24 13:34:33.709  INFO 945462 --- [main] c.r.l.s.c.CalculatorApplication          : Started CalculatorApplication in 0.714 seconds (JVM running for 1.245)
+2022-03-24 13:35:18.691  INFO 946214 --- [main] c.r.l.s.c.CalculatorApplication          : Starting CalculatorApplication using Java 11.0.8 on rudy-ThinkPad-T590 with PID 946214 (/home/rudy/IdeaProjects/Learn/spring_boot_recipes/target/classes started by rudy in /home/rudy/IdeaProjects/Learn/spring_boot_recipes)
+2022-03-24 13:35:18.694  INFO 946214 --- [main] c.r.l.s.c.CalculatorApplication          : The following 1 profile is active: "dev"
+2022-03-24 13:35:19.194  INFO 946214 --- [main] c.r.l.s.c.CalculatorApplication          : Info log message
+2022-03-24 13:35:19.194 ERROR 946214 --- [main] c.r.l.s.c.CalculatorApplication          : Error log message
+2022-03-24 13:35:19.301  INFO 946214 --- [main] c.r.l.s.c.CalculatorApplication          : Started CalculatorApplication in 0.967 seconds (JVM running for 1.658)
+2022-03-24 13:36:51.631  INFO 947694 --- [main] c.r.l.s.c.CalculatorApplication          : Starting CalculatorApplication using Java 11.0.8 on rudy-ThinkPad-T590 with PID 947694 (/home/rudy/IdeaProjects/Learn/spring_boot_recipes/target/classes started by rudy in /home/rudy/IdeaProjects/Learn/spring_boot_recipes)
+2022-03-24 13:36:51.634  INFO 947694 --- [main] c.r.l.s.c.CalculatorApplication          : The following 1 profile is active: "dev"
+2022-03-24 13:36:52.014  INFO 947694 --- [main] c.r.l.s.c.CalculatorApplication          : Info log message
+2022-03-24 13:36:52.015 ERROR 947694 --- [main] c.r.l.s.c.CalculatorApplication          : Error log message
+2022-03-24 13:36:52.089  INFO 947694 --- [main] c.r.l.s.c.CalculatorApplication          : Started CalculatorApplication in 0.773 seconds (JVM running for 1.36)
+2022-03-24 13:42:14.119  INFO 952606 --- [main] c.r.l.s.c.CalculatorApplication          : Starting CalculatorApplication using Java 11.0.8 on rudy-ThinkPad-T590 with PID 952606 (/home/rudy/IdeaProjects/Learn/spring_boot_recipes/target/classes started by rudy in /home/rudy/IdeaProjects/Learn/spring_boot_recipes)
+2022-03-24 13:42:14.121  INFO 952606 --- [main] c.r.l.s.c.CalculatorApplication          : The following 1 profile is active: "dev"
+2022-03-24 13:42:14.631  INFO 952606 --- [main] c.r.l.s.c.CalculatorApplication          : Info log message
+2022-03-24 13:42:14.631 ERROR 952606 --- [main] c.r.l.s.c.CalculatorApplication          : Error log message
+2022-03-24 13:42:14.721  INFO 952606 --- [main] c.r.l.s.c.CalculatorApplication          : Started CalculatorApplication in 1.001 seconds (JVM running for 1.682)
+2022-03-24 13:48:12.632  INFO 958301 --- [main] c.r.l.s.c.CalculatorApplication          : Starting CalculatorApplication using Java 11.0.8 on rudy-ThinkPad-T590 with PID 958301 (/home/rudy/IdeaProjects/Learn/spring_boot_recipes/target/classes started by rudy in /home/rudy/IdeaProjects/Learn/spring_boot_recipes)
+2022-03-24 13:48:12.634  INFO 958301 --- [main] c.r.l.s.c.CalculatorApplication          : The following 1 profile is active: "dev"
+2022-03-24 13:48:13.154  INFO 958301 --- [main] c.r.l.s.c.CalculatorApplication          : Info log message
+2022-03-24 13:48:13.154 ERROR 958301 --- [main] c.r.l.s.c.CalculatorApplication          : Error log message
+2022-03-24 13:48:13.226  INFO 958301 --- [main] c.r.l.s.c.CalculatorApplication          : Started CalculatorApplication in 0.95 seconds (JVM running for 1.497)
