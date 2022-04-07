@@ -1,12 +1,11 @@
-package com.rudyvissers.learn.spf.hellojdbc;
+package com.rudyvissers.learn.spf.hellojpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HelloJdbcApplication {
-
+public class HelloJpaApplication {
     public static void main(String[] args) {
-        SpringApplication.run(HelloJdbcApplication.class, args);
+        SpringApplication.run(HelloJpaApplication.class, args);
     }
 }

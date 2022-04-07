@@ -17,6 +17,11 @@
     <properties>
         <java.version>11</java.version>
         <!--         <start-class>HelloWorldApplication</start-class>-->
+        <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.library.LibraryApplication</spring.boot.mainclass>-->
+        <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworldweb.HelloWorldWebApplication</spring.boot.mainclass>-->
+        <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloWorldApplication</spring.boot.mainclass>-->
+        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJdbcApplication</spring.boot.mainclass>
+        <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJpaApplication</spring.boot.mainclass> -->
     </properties>
 
     <dependencies>
@@ -60,22 +65,10 @@
         <!--        </dependency>-->
 
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.4.196</version> <!-- becasue of Key-->
-            <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -95,21 +88,38 @@
                 </executions>
             </plugin>
         </plugins>
-        <!--        <resources>-->
-        <!--            <resource>-->
-        <!--                <directory>src/main/resources</directory>-->
-        <!--                <filtering>true</filtering>-->
-        <!--            </resource>-->
-        <!--        </resources>-->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
     <profiles>
         <profile>
-            <id>dev</id>
+            <id>prod</id>
             <properties>
-                <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.library.LibraryApplication</spring.boot.mainclass>-->
-                <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworldweb.HelloWorldWebApplication</spring.boot.mainclass>-->
-                <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloWorldApplication</spring.boot.mainclass>-->
-                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJdbcApplication</spring.boot.mainclass>
+                <spring.profiles.active>prod</spring.profiles.active>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>org.postgresql</groupId>
+                    <artifactId>postgresql</artifactId>
+                    <scope>runtime</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.flywaydb</groupId>
+                    <artifactId>flyway-core</artifactId>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>local</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <spring.profiles.active>local</spring.profiles.active>
             </properties>
         </profile>
     </profiles>
