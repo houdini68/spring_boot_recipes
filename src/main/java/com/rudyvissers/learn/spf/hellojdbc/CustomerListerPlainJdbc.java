@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 
-//@Component
+@Component
 class CustomerListerPlainJdbc implements ApplicationRunner {
     private final Logger logger = LoggerFactory.getLogger(getClass());
     private final DataSource dataSource;

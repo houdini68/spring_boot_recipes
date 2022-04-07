@@ -7,7 +7,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class CustomerListerJdbcTemplate implements ApplicationRunner {
     private final Logger logger = LoggerFactory.getLogger(getClass());
     private final JdbcTemplate jdbc;

@@ -20,8 +20,8 @@
         <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.library.LibraryApplication</spring.boot.mainclass>-->
         <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworldweb.HelloWorldWebApplication</spring.boot.mainclass>-->
         <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloWorldApplication</spring.boot.mainclass>-->
-        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJdbcApplication</spring.boot.mainclass>
-        <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJpaApplication</spring.boot.mainclass> -->
+        <!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJdbcApplication</spring.boot.mainclass>-->
+        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJpaApplication</spring.boot.mainclass>
     </properties>
 
     <dependencies>
@@ -69,6 +69,12 @@
             <artifactId>h2</artifactId>
             <version>1.4.196</version> <!-- becasue of Key-->
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
