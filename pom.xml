@@ -16,12 +16,13 @@
 
     <properties>
         <java.version>11</java.version>
-        <!--         <start-class>HelloWorldApplication</start-class>-->
-        <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.library.LibraryApplication</spring.boot.mainclass>-->
-        <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworldweb.HelloWorldWebApplication</spring.boot.mainclass>-->
-        <!--                <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloWorldApplication</spring.boot.mainclass>-->
-        <!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJdbcApplication</spring.boot.mainclass>-->
-        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJpaApplication</spring.boot.mainclass>
+<!--        <start-class>HelloWorldApplication</start-class>-->
+<!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.library.LibraryApplication</spring.boot.mainclass>-->
+<!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworldweb.HelloWorldWebApplication</spring.boot.mainclass>-->
+<!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloWorldApplication</spring.boot.mainclass>-->
+<!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJdbcApplication</spring.boot.mainclass>-->
+<!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.hellojpa.HelloJpaApplication</spring.boot.mainclass>-->
+        <spring.boot.mainclass>com.rudyvissers.learn.spf.hibernate.tips.HibernateTipsApp</spring.boot.mainclass>
     </properties>
 
     <dependencies>
