@@ -16,12 +16,12 @@
 
     <properties>
         <java.version>11</java.version>
-<!--        <start-class>HelloWorldApplication</start-class>-->
-<!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.library.LibraryApplication</spring.boot.mainclass>-->
-<!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworldweb.HelloWorldWebApplication</spring.boot.mainclass>-->
-<!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloWorldApplication</spring.boot.mainclass>-->
-<!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJdbcApplication</spring.boot.mainclass>-->
-<!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.hellojpa.HelloJpaApplication</spring.boot.mainclass>-->
+        <!--        <start-class>HelloWorldApplication</start-class>-->
+        <!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.library.LibraryApplication</spring.boot.mainclass>-->
+        <!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworldweb.HelloWorldWebApplication</spring.boot.mainclass>-->
+        <!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloWorldApplication</spring.boot.mainclass>-->
+        <!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.helloworld.HelloJdbcApplication</spring.boot.mainclass>-->
+        <!--        <spring.boot.mainclass>com.rudyvissers.learn.spf.hellojpa.HelloJpaApplication</spring.boot.mainclass>-->
         <spring.boot.mainclass>com.rudyvissers.learn.spf.hibernate.tips.HibernateTipsApp</spring.boot.mainclass>
     </properties>
 
@@ -66,12 +66,6 @@
         <!--        </dependency>-->
 
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>1.4.196</version> <!-- becasue of Key-->
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
@@ -110,24 +104,34 @@
             </properties>
             <dependencies>
                 <dependency>
+                    <groupId>com.h2database</groupId>
+                    <artifactId>h2</artifactId>
+                    <version>1.4.196</version> <!-- because of Key-->
+                    <scope>test</scope>
+                </dependency>
+                <dependency>
                     <groupId>org.postgresql</groupId>
                     <artifactId>postgresql</artifactId>
                     <scope>runtime</scope>
                 </dependency>
-                <dependency>
-                    <groupId>org.flywaydb</groupId>
-                    <artifactId>flyway-core</artifactId>
-                </dependency>
+                <!--                <dependency>-->
+                <!--                    <groupId>org.flywaydb</groupId>-->
+                <!--                    <artifactId>flyway-core</artifactId>-->
+                <!--                </dependency>-->
             </dependencies>
         </profile>
         <profile>
             <id>local</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <properties>
                 <spring.profiles.active>local</spring.profiles.active>
             </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>com.h2database</groupId>
+                    <artifactId>h2</artifactId>
+                    <version>1.4.196</version> <!-- because of Key-->
+                </dependency>
+            </dependencies>
         </profile>
     </profiles>
 </project>

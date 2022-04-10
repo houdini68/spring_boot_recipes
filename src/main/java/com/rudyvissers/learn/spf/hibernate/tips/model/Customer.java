@@ -5,13 +5,15 @@ import java.util.Objects;
 
 @Entity
 public class Customer {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
     @Column(nullable = false)
     private final String name;
     @Column(nullable = false)
     private final String email;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
 
     public Customer() {
         this(null, null);

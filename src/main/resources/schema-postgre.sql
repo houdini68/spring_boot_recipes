@@ -1,27 +1,33 @@
 DROP TABLE IF EXISTS customer;
-CREATE TABLE IF NOT EXISTS customer
+
+CREATE TABLE customer
 (
-    id    BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id    SERIAL PRIMARY KEY,
     name  VARCHAR(100) NOT NULL,
     email VARCHAR(255) NOT NULL,
     UNIQUE (name)
 );
+
 DROP TABLE IF EXISTS order_t;
-CREATE TABLE IF NOT EXISTS order_t
+
+CREATE TABLE order_t
 (
-    id     BIGINT AUTO_INCREMENT PRIMARY KEY,
-    number VARCHAR(100) NOT NULL,
+    id    SERIAL PRIMARY KEY,
+    number  VARCHAR(100) NOT NULL,
     UNIQUE (number)
 );
+
+DROP TABLE IF EXISTS bookstore.author;
+
 DROP SCHEMA IF EXISTS bookstore;
 CREATE SCHEMA bookstore;
-DROP TABLE IF EXISTS bookstore.author;
+
 CREATE TABLE bookstore.author
 (
-    id         BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id         SERIAL PRIMARY KEY,
     first_name VARCHAR(100) NOT NULL,
     lname      VARCHAR(100) NOT NULL,
     version    VARCHAR(100) NULL,
---     status     int -- enum
-    status     varchar(50)
+    status     VARCHAR(20) -- enum
+--     status     varchar(50)
 );

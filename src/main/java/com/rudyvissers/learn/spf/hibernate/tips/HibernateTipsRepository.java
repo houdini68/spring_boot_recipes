@@ -1,6 +1,7 @@
 package com.rudyvissers.learn.spf.hibernate.tips;
 
 import com.rudyvissers.learn.spf.hibernate.tips.model.Author;
+import com.rudyvissers.learn.spf.hibernate.tips.model.AuthorStatus;
 import com.rudyvissers.learn.spf.hibernate.tips.model.Customer;
 import org.springframework.stereotype.Repository;
 
@@ -18,9 +19,9 @@ class HibernateTipsRepository {
         Author a = new Author();
         a.setFirstName("firstName");
         a.setLastName("lastName");
+        a.setStatus(AuthorStatus.PUBLISHED); // how is enum Status persisted?
         em.persist(a);
-        return em.createQuery("SELECT a FROM Author a WHERE a.firstName = 'firstName'", Author.class)
-                .getSingleResult();
+        return em.createQuery("SELECT a FROM Author a WHERE a.firstName = 'firstName'", Author.class).getSingleResult();
     }
 
     public Customer findCustomer() {

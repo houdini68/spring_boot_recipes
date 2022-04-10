@@ -20,8 +20,10 @@ public class HibernateTipsReporyLister implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
+
         Author author = hibernateTipsRepository.createAuthor();
         logger.info("From HibernateTipsRepository - createAuthor - {}", author);
+
         Customer customer = hibernateTipsRepository.findCustomer();
         logger.info("From HibernateTipsRepository - findCustomer - {}", customer);
     }
