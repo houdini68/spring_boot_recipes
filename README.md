@@ -5,7 +5,7 @@ Rudy Vissers does implement recipes on the Spring Framework/Spring Boot/JPA/Hibe
 Have a lot of fun like I have.
 
 ## H2 and Postgresql
-Tests running on H2.
+Tests running on H2.<br>
 Run local and you don't need Postgresql. It us running on H2.<br>
 Run prod and you do need Postresql up and running. (for this I use a docker).<br><br>
 I want control on the database creation.<br>
