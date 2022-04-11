@@ -1,18 +1,24 @@
-# spring_boot_recipes
+# Spring Boot Recipes
 
 ## Introduction
-Rudy Vissers does implement recipes on the Spring Framework/Spring Boot/JPA/Hibernate.
-Have a lot of fun like I have.
+Rudy Vissers does implement recipes on the Spring Framework/Spring Boot/JPA apis/Hibernate/...
+Have a lot of fun!
 
-## H2 and Postgresql
-Tests running on H2.<br><br>
-Run local and you don't need Postgresql. It is running on H2.<br>
-Run prod and you do need Postresql up and running. (for this I use a docker).<br><br>
-I want control on the database creation.<br>
-The recreation of the schema and data when running.<br>
-I want a clean database + data at each run.<br>
-I don't want Hibernate to create the database/tables.<br>
-You will find Flyway commented out (dep and sql files).
+## Starting the app (H2 or Postgresql)
+
+There are several (Intellij) run configurations.<br>
+run local (H2 everywhere) and run prod (H2 testing and Postgres)
+Tests running on H2.<br>
+run local on H2 (Postgresql not needed).<br>
+run prod on Postgresql (Postresql up and running in a docker).<br><br>
+Control on the database creation.<br>
+The creation of the schema and loading of the data at the starting of the app.<br>
+Hibernate doesn't create the database/tables (deactivated).<br><br>
+Flyway commented out (dep and sql files). Could be activated if used.<br>
+If Flyway is used, then the schema and the data have to be managed manually.<br> 
+spring.sql.init.platform=postgre // to be removed <br>
+spring.sql.init.mode=always // to be removed <br>
+And Flyway to eb activated in pom.xml, profile 'prod'<br>
 
 ## Q&A 
 
