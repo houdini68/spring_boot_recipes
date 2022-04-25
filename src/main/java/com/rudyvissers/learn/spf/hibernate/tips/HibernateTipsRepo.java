@@ -10,7 +10,7 @@ import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
 @Repository
-class HibernateTipsRepository {
+class HibernateTipsRepo {
     @PersistenceContext
     private EntityManager em;
 

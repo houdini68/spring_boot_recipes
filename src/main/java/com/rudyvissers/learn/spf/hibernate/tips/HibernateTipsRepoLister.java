@@ -9,22 +9,22 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class HibernateTipsReporyLister implements ApplicationRunner {
+public class HibernateTipsRepoLister implements ApplicationRunner {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
-    private final HibernateTipsRepository hibernateTipsRepository;
+    private final HibernateTipsRepo hibernateTipsRepo;
 
-    public HibernateTipsReporyLister(HibernateTipsRepository hibernateTipsRepository) {
-        this.hibernateTipsRepository = hibernateTipsRepository;
+    public HibernateTipsRepoLister(HibernateTipsRepo hibernateTipsRepo) {
+        this.hibernateTipsRepo = hibernateTipsRepo;
     }
 
     @Override
     public void run(ApplicationArguments args) {
 
-        Author author = hibernateTipsRepository.createAuthor();
+        Author author = hibernateTipsRepo.createAuthor();
         logger.info("From HibernateTipsRepository - createAuthor - {}", author);
 
-        Customer customer = hibernateTipsRepository.findCustomer();
+        Customer customer = hibernateTipsRepo.findCustomer();
         logger.info("From HibernateTipsRepository - findCustomer - {}", customer);
     }
 }
